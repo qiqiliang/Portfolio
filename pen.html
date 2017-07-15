@@ -8,15 +8,8 @@ p{
   margin: 0 auto;
   text-align: justify;  
   color: white;
-  width: 500px
-}
-
-.about{
-  padding-right: 10px;
-  padding-left: 20px;
-}
-.portfolio{
-  padding-right: 10px;
+  width: 500px;
+  
 }
 
 .hi-im-qiqi{
@@ -40,6 +33,7 @@ p{
   text-align: center;
   padding-top: 550px;
   padding-bottom: 30px;
+  
 }
 
 .contact-me{
@@ -71,42 +65,33 @@ p{
   
 }
 
-.row{
- display: inline;
- }
 </style>
 <html>
   <body>
   <div class = "background"><!-- div for background-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link for icons -->
 <link href="http://fonts.googleapis.com/css?family=FONTNAME" rel="stylesheet" type="text/css" /><!--link for google fonts-->
-<div class = "row"><!-- Button div-->
-  <div class= "about"> 
-<button> About</button>
-  </div>
-  <div class = "portfolio ">
-<button> Portfolio</button>
-  </div>
-  <div class = "contact">
-<button> Contact</button>
-  </div>
-</div><!-- Button div-->
-
-<div class = "intro"><!-- div for intro-->
+<nav>
+  <a href = "#about">About</a>
+  <a href = "#portfolio">Portfolio</a>
+  <a href = "#contact">Contact</a>
+</nav>
+  
+<div id = "about"><!-- div for intro-->
 <h1 class = "hi-im-qiqi">Hi, I'm Qiqi </h1> 
 <h2 class = "passionate-programmer">a passionate programmer. </h2>
 </div> <!-- div for intro-->
 
 
-<div class = "portfolio"><!--div for portfolio-->
-<h2 class = "little-about-me">A little about me..... </h2> 
+<div id = "portfolio">
+<h2 class = "little-about-me" >A little about me..... </h2>  
 <p> I grew up in Guangzhou, China and moved to California when I was around five years old. This summer, I am attending Girls Who Code, a program designed to encourage women to pursue technology. I am a rising senior at Castro Valley High School. Some of my favorite hobbies include running, swimming, biking, and traveling. I read mostly non-fiction books however, if there was a fiction series I would recommend to anyone, it would be Keeper Of The Lost Cities. I absolutely love this series and I have been reading it ever since I was in middle school.
 <a href = "http://ramblingsofawannabescribe.blogspot.com">Here's the link to the series!</a> 
   </p>
 </div> <!--div for portfolio-->
 
 
-<div class = "contact"><!-- div for contact-->
+<div id = "contact"><!-- div for contact-->
   <h3 class = "contact-me"> Contact</h3>
   <div class = "email-me">
   <a  href = "mailto:qiqiliang@ymail.com">Email Me</a><br></div>
