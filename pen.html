@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<script>
- $("nav").find("a").click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr("href");
-    $("html,body").animate({
-        scrollTop: $(section).offset().top
-    });
-});
-</script>
-<!-------------------------------------------------------------------------------------------------------------------------------------->
 <style>
  body,html{
   margin: 0 auto;
@@ -81,28 +70,22 @@ p{
   <div class = "background"><!-- div for background-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link for icons -->
 <link href="http://fonts.googleapis.com/css?family=FONTNAME" rel="stylesheet" type="text/css" /><!--link for google fonts-->
-<nav>
-  <a href = "#about">About</a>
-  <a href = "#portfolio">Portfolio</a>
-  <a href = "#contact">Contact</a>
-</nav>
-  
-<div id = "about"><!-- div for intro-->
+
 <h1 class = "hi-im-qiqi">Hi, I'm Qiqi </h1> 
 <h2 class = "passionate-programmer">a passionate programmer. </h2>
-</div> <!-- div for intro-->
+
 
 
 
 <h2 class = "little-about-me" >A little about me..... </h2>
-   <div id = "portfolio">
+  
 <p> I grew up in Guangzhou, China and moved to California when I was around five years old. This summer, I am attending Girls Who Code, a program designed to encourage women to pursue technology. I am a rising senior at Castro Valley High School. Some of my favorite hobbies include running, swimming, biking, and traveling. I read mostly non-fiction books however, if there was a fiction series I would recommend to anyone, it would be Keeper Of The Lost Cities. I absolutely love this series and I have been reading it ever since I was in middle school.
 <a href = "http://ramblingsofawannabescribe.blogspot.com">Here's the link to the series!</a> 
   </p>
-</div> <!--div for portfolio-->
 
 
-<div id = "contact"><!-- div for contact-->
+
+
   <h3 class = "contact-me"> Contact</h3>
   <div class = "email-me">
   <a  href = "mailto:qiqiliang@ymail.com">Email Me</a><br></div>
@@ -111,9 +94,6 @@ p{
   <div class = "ln">
     <a href = "https://www.linkedin.com/in/qiqi-liang-117358146/">Linkedin</a></div>
   
-
-  
-  </div> <!-- div for contact-->
 </div><!--div for background--> 
 </body>
 </html>
