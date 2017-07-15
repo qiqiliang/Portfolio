@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<script>
+ $("nav").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html,body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
+</script>
+<!-------------------------------------------------------------------------------------------------------------------------------------->
 <style>
  body,html{
   margin: 0 auto;
