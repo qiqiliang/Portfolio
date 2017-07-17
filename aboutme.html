@@ -56,7 +56,7 @@ body,html{
  
 </style>
 <html>
- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ <script src="http://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
  <script src="typed.js"></script>
  <script>
  $(document).ready(function(){
@@ -67,6 +67,11 @@ body,html{
          scrollTop: $(section).offset().top
    });
  });
+
+var typed = new Typed('.hi-im-qiqi', {
+  strings: ["Hi I'm QIQI,<br> a computer programmer."],
+  typeSpeed: 5
+});
 
 });
  </script>
