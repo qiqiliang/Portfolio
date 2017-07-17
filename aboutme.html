@@ -24,7 +24,7 @@ body,html{
 }
 
 .passionate-programmer{
-  color: pink;
+  color: white;
   padding-top: 40px;
   position: absolute;
   left: 650px;
@@ -87,13 +87,9 @@ body,html{
  <script scr = "https://github.com/jquery/jquery.git"> </script>
  <script>
   $(document).ready(function(){
-  $("nav").find("a").click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr("href");
-    $("html,body").animate({
-        scrollTop: $(section).offset().top
-    });
-});
+  $("#btn-about").click(function(){
+    $('html,body').animate({
+      scrollTop: $("#about").offset().top});
 });
  </script>
   <div class = "background"><!-- div for background-->
