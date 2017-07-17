@@ -24,7 +24,7 @@ body,html{
 }
 
 .passionate-programmer{
-  color: pink;
+  color: white;
   padding-top: 40px;
   position: absolute;
   left: 650px;
@@ -83,19 +83,8 @@ body,html{
  <script scr = "https://github.com/jquery/jquery.git"> </script>
  <script>
  $(document).ready(function(){
-  $("nav").find("a").click(function(e) {
-     e.preventDefault();
-    var section = $(this).attr("href");
-   $("html,body").animate({
-         scrollTop: $(section).offset().top
-   });
- });
-   
-   
-   
-   
    var navOffSet = $("nav").offSet().top();
-   $(window).scroll(function(){
+      $(window).scroll(function(){
    
      var scrollPos = $(window).scrollTop();
      if(scrollPos >= navOffSet)
@@ -106,10 +95,6 @@ body,html{
      }
    
    });
-  
-   
-   
-   
 });
  </script>
   <div class = "background"><!-- div for background-->
