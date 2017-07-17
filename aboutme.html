@@ -72,29 +72,19 @@ body,html{
    position: fixed;
   }
   
-  .fixed{
-    
-    position: fixed;
-    top: 0;
-  }
-  
 </style>
 <html>
  <script scr = "https://github.com/jquery/jquery.git"> </script>
  <script>
  $(document).ready(function(){
-   var navOffSet = $("nav").offSet().top();
-      $(window).scroll(function(){
-   
-     var scrollPos = $(window).scrollTop();
-     if(scrollPos >= navOffSet)
-     {
-       $("nav").addClass("fixed");
-     } else{
-       $("nav").removeClass("fixed");
-     }
-   
+   $("nav").find("a").click(function(e) {
+     e.preventDefault();
+    var section = $(this).attr("href");
+   $("html,body").animate({
+         scrollTop: $(section).offset().top
    });
+ });
+
 });
  </script>
   <div class = "background"><!-- div for background-->
