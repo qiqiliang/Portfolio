@@ -16,6 +16,21 @@ body,html{
   
 }
 
+.hi-im-qiqi{
+   text-align: center;
+   padding-top: 190px;
+   color: white;
+   position: relative;
+}
+
+.passionate-programmer{
+  color: white;
+  padding-top: 40px;
+  position: absolute;
+  left: 650px;
+  
+   
+}
 
 #little-about-me{
   color: white;
@@ -53,26 +68,24 @@ body,html{
   background-size: cover;
   background-repeat: no repeat; 
 }
- 
+ .nav{
+   position: fixed;
+  }
+  
 </style>
 <html>
- <script src="http://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
- <script src="typed.js"></script>
+ <script scr = "https://github.com/jquery/jquery.git"> </script>
  <script>
  $(document).ready(function(){
-   $("nav").find("a").click(function(e) {
+  $("nav").find("a").click(function(e) {
      e.preventDefault();
     var section = $(this).attr("href");
    $("html,body").animate({
          scrollTop: $(section).offset().top
    });
  });
-
-$('.hi-im-qiqi').typed {
-  strings: ["Hi I'm QIQI,<br> a computer programmer."],
-  typeSpeed: 5
-});
-
+ 
+   
 });
  </script>
   <div class = "background"><!-- div for background-->
@@ -86,7 +99,8 @@ $('.hi-im-qiqi').typed {
 </nav>
   
 <div id = "about"><!-- div for intro-->
-<h1 class = "hi-im-qiqi"></h1> 
+<h1 class = "hi-im-qiqi">Hi, I'm Qiqi </h1> 
+<h2 class = "passionate-programmer">a computer programmer. </h2>
 </div> <!-- div for intro-->
 
 
@@ -106,4 +120,5 @@ $('.hi-im-qiqi').typed {
   
 </div><!--div for background--> 
 </html>
+
 
