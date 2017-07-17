@@ -24,7 +24,7 @@ body,html{
 }
 
 .passionate-programmer{
-  color: white;
+  color: pink;
   padding-top: 40px;
   position: absolute;
   left: 650px;
@@ -71,25 +71,19 @@ body,html{
  .nav{
    position: fixed;
   }
- #btn-about{
-   position: fixed;
-  }
-  #btn-portfolio{
-    position: fixed;
-    left: 60px;
-  }
-  #btn-contact{
-    position: fixed;
-    left: 135px;
-  }
+  
 </style>
 <html>
  <script scr = "https://github.com/jquery/jquery.git"> </script>
  <script>
-  $(document).ready(function(){
-  $("#btn-about").click(function(){
-    $('html,body').animate({
-      scrollTop: $("#about").offset().top});
+ $(document).ready(function(){
+  $("nav").find("a").click(function(e) {
+     e.preventDefault();
+    var section = $(this).attr("href");
+   $("html,body").animate({
+         scrollTop: $(section).offset().top
+   });
+ });
 });
  </script>
   <div class = "background"><!-- div for background-->
@@ -97,9 +91,9 @@ body,html{
 <link href="http://fonts.googleapis.com/css?family=FONTNAME" rel="stylesheet" type="text/css" /><!--link for google fonts-->
   
 <nav>
-  <button id = "btn-about"> <a href = "#about">About</a> </button>
-  <button id = "btn-portfolio"> <a href = "#little-about-me">Portfolio</a> </button>
-  <button id = "btn-contact"> <a href = "#email-me">Contact</a> </button>
+  <button> <a href = "#about">About</a> </button>
+  <button> <a href = "#little-about-me">Portfolio</a> </button>
+  <button> <a href = "#email-me">Contact</a> </button>
 </nav>
   
 <div id = "about"><!-- div for intro-->
