@@ -74,7 +74,8 @@ body,html{
   
 </style>
 <html>
- <script scr = "https://github.com/jquery/jquery.git"> </script>
+ <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ <script src="jquery.typist.js"></script>
  <script>
  $(document).ready(function(){
    $("nav").find("a").click(function(e) {
@@ -85,6 +86,12 @@ body,html{
    });
  });
 
+   $('.typist').typist({
+		speed: 12,
+		text: 'Hi, I'm Qiqi.'
+	});
+   
+   
 });
  </script>
   <div class = "background"><!-- div for background-->
@@ -98,8 +105,8 @@ body,html{
 </nav>
   
 <div id = "about"><!-- div for intro-->
-<h1 class = "hi-im-qiqi">Hi, I'm Qiqi </h1> 
-<h2 class = "passionate-programmer">a computer programmer. </h2>
+<h1 class = "hi-im-qiqi typist"></h1> 
+<!--<h2 class = "passionate-programmer typist">a computer programmer. </h2>-->
 </div> <!-- div for intro-->
 
 
