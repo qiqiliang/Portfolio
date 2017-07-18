@@ -23,34 +23,29 @@
       top: 940px;
       padding-bottom: 500px;
    }
- .btn-1{
-  position: fixed;
-  
-  
- }
  
- .btn-2{
-  position: fixed;
-  
- }
 </style>
 <!DOCTYPE html>
 <html>
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- jquery link google-->
- 
- 
- 
- 
-  
-</script>
+ <script scr = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
+ <script>
+ $(document).ready(function(){
+    $("nav").find("a").click(function(e) {
+      e.preventDefault();
+     var section = $(this).attr("href");
+    $("html,body").animate({
+          scrollTop: $(section).offset().top
+    });
+  });
+});
+ </script>
  <!--Code below line is html -->
- <div class = "btn-1">
- <button><a href = "#firstsection">Button 2</a></button>
- </div>
- <div class = "btn-2">
- <button><a href = "#secondsection">Button 1</a></button>
- </div>
+ 
+ <nav>
+ <button><a href = "#firstsection">Button 1</a></button>
+ <button style = "inline padding-left:100px"><a href = "#secondsection">Button 2</a></button>
+ </nav>
  
  <h1 id = "firstsection"> This is the first section</h1>
   <p class = "p1">Horem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
