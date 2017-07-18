@@ -87,32 +87,28 @@ body,html{
   background-repeat: no repeat; 
 }
 
+#navbar{
+  
+  display: inline;
+  
+  }
+
   
 </style>
 <!DOCTYPE html>
 <html>
   <div class = "background"><!-- div for background-->
     <body>
- <script scr = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
- <script>
- $(document).ready(function(){
-    $("nav").find("a").click(function(e) {
-      e.preventDefault();
-     var section = $(this).attr("href");
-    $("html,body").animate({
-          scrollTop: $(section).offset().top
-    });
-  });
-});
- </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link for icons -->
 <link href="http://fonts.googleapis.com/css?family=FONTNAME" rel="stylesheet" type="text/css" /><!--link for google fonts-->
   
-<nav>
-  <button> <a href = "#about">About</a> </button>
-  <button> <a href = "#little-about-me">Portfolio</a> </button>
-  <button> <a href = "#email-me">Contact</a> </button>
-</nav>
+<div id = "navbar">
+  <ul>
+    <li> <a href = "#about">About</a> </li>
+    <li> <a href = "#little-about-me">Portfolio</a> </li>
+    <li> <a href = "#email-me">Contact</a> </li>
+    <ul>
+</div>
   
 <div id = "about"><!-- div for intro-->
 <h1 class = "hi-im-qiqi">Hi, I'm Qiqi </h1> 
