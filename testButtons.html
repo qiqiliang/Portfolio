@@ -14,12 +14,18 @@
 <script >// js and jquery
   $(document).ready(function(){
   //all js code goes here
-  $("#demo").html("Hello, World!");
+  $("#trigger").click(function(){
+   $("#demo").html("Hello, World!"); 
+    
+  });
+    
   });
   
   
   </script>
  <!--Code below line is html -->
   <p id = "demo"> </p>
+  <button id = "trigger">Click me</button>
 </body>
 </html>
+
