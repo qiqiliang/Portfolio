@@ -96,14 +96,6 @@ body,html{
  <script scr = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
  <script>
  $(document).ready(function(){
-  $("nav").find("a").click(function(e) {
-     e.preventDefault();
-    var section = $(this).attr("href");
-   $("html,body").animate({
-         scrollTop: $(section).offset().top
-   });
- });
- 
    
 });
  </script>
