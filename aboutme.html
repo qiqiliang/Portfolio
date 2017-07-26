@@ -93,17 +93,32 @@ body{
      top: 1755px;
      padding-bottom: 100px; 
   }
+  #navbar ul li a:hover
+  {
+    color: #000; 
+	  background-color: #fff; 
+  }
+  #navbar ul li
+  {
+    display: inline;
+  }
+  #navbar ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: #fff; 
+	background-color: #000; 
+	} 
 </style>
 <!DOCTYPE>
 <html>
   
     <body>     
-<nav>
-  
-    <button> <a href = "#about">About</a> </button>
-    <button> <a href = "#little-about-me">Portfolio</a> </button>
-    <button> <a href = "#contact">Contact</a> </button>
-    
+<nav id = "navbar">
+  <ul>
+    <li> <a href = "#about">About</a> </li>
+    <li> <a href = "#little-about-me">Portfolio</a> </li>
+    <li> <a href = "#contact">Contact</a> </li>
+  </ul>
 </nav>
   
 <div id = "about"><!-- div for intro-->
